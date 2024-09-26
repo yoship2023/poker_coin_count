@@ -30,8 +30,8 @@ TAN13 = 1.3
 exchange_rate = st.number_input("1ドルのレート（円）", min_value=0.01, value=144.5)
 arrival_coin = st.number_input("着金コイン", min_value=1, value=1, step=1)
 # GGドル交換コイン（7%）
-gg_tran_coin = arrival_coin * TAN93
-ta_tran = arrival_coin * TAN07
+gg_tran_coin = int(arrival_coin * TAN93)
+ta_tran = int(arrival_coin * TAN07)
 
 if st.button("計算"):
     st.success(f"GGドル交換コインは {gg_tran_coin:,} coin")
