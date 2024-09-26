@@ -29,13 +29,14 @@ TAN13 = 1.3
 # 入力フォーム
 exchange_rate = st.number_input("1ドルのレート（円）", min_value=0.01, value=144.5)
 arrival_coin = st.number_input("着金コイン", min_value=1, value=1, step=1)
-# GGドル交換コイン（7%）
+# GGドル交換
 gg_tran_coin = int(arrival_coin * TAN93)
+# 取引手数料（7%）
 ta_tran = int(arrival_coin * TAN07)
 
 if st.button("計算"):
     st.success(f"GGドル交換は {gg_tran_coin:,} 円")
-    st.success(f"取引手数料（7%） {ta_tran:,} 円")
+    st.success(f"取引手数料（{TAN07*100:} %） {ta_tran:,} 円")
 
 # if st.button("還元率を計算"):
 #     rtp = calculate_rtp(prize_pool, total_entry_fee)
