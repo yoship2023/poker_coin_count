@@ -34,7 +34,7 @@ gg_tran_coin = int(arrival_coin * TAN93)
 # 取引手数料（7%）
 ta_tran = int(arrival_coin * TAN07)
 # GGドル
-gg_doll = gg_tran_coin * arrival_coin
+gg_doll = int(gg_tran_coin * arrival_coin)
 
 if st.button("計算"):
     st.success(f"GGドル交換は  {gg_tran_coin:,} 円")
