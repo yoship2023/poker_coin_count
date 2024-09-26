@@ -33,8 +33,9 @@ arrival_coin = st.number_input("着金コイン", min_value=1, value=1, step=1)
 gg_tran_coin = arrival_coin * TAN93
 ta_tran = arrival_coin * TAN07
 
-st.success(f"GGドル交換コインは {gg_tran_coin:,} coin")
-st.success(f"取引手数料（7%） {ta_tran:,} 円")
+if st.button("計算"):
+    st.success(f"GGドル交換コインは {gg_tran_coin:,} coin")
+    st.success(f"取引手数料（7%） {ta_tran:,} 円")
 
 # if st.button("還元率を計算"):
 #     rtp = calculate_rtp(prize_pool, total_entry_fee)
