@@ -35,7 +35,7 @@ gg_tran_coin = int(arrival_coin * TAN93)
 ta_tran = int(arrival_coin * TAN07)
 
 if st.button("計算"):
-    st.success(f"GGドル交換は {gg_tran_coin:,} 円")
+    st.success(f"GGドル交換は  {gg_tran_coin:,} 円")
     st.success(f"取引手数料（{int(TAN07 * 100):} %） {ta_tran:,} 円")
 
 # if st.button("還元率を計算"):
