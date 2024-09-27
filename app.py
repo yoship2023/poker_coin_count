@@ -21,6 +21,7 @@ def calculate_entries_for_rtp(entry_fee, rtp_target, total_prize):
 # st.title("ウェブコインかぞえチャオ")
 # st.header("ウェブコインかぞえチャオ")
 st.subheader("ウェブコインかぞえチャオ")
+st.text("最新のドル円レートと着金コインを入力してください")
 
 # トランスファー手数料（3%）
 TAN03 = 0.03
