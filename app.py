@@ -34,7 +34,7 @@ RATE = 143.00
 
 # 入力フォーム
 exchange_rate = st.number_input("1ドルのレート（円）", min_value=0.01, value=RATE)
-arrival_coin = st.number_input("着金コイン", min_value=1, value=1, step=1)
+arrival_coin = st.number_input("着金コイン", min_value=1, value=10000, step=1)
 # GGドル交換
 gg_tran_coin = int(arrival_coin * TAN93)
 # 取引手数料（7%）
