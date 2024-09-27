@@ -28,9 +28,11 @@ TAN03 = 0.03
 TAN07 = 0.07
 TAN93 = 1 - TAN07
 TAN13 = 1.3
+# ドル円レート
+RATE = 145.5
 
 # 入力フォーム
-exchange_rate = st.number_input("1ドルのレート（円）", min_value=0.01, value=144.5)
+exchange_rate = st.number_input("1ドルのレート（円）", min_value=0.01, value=RATE)
 arrival_coin = st.number_input("着金コイン", min_value=1, value=1, step=1)
 # GGドル交換
 gg_tran_coin = int(arrival_coin * TAN93)
