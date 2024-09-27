@@ -39,9 +39,9 @@ gg_doll = gg_tran_coin / exchange_rate
 # result_gg_doll = 
 
 if st.button("計算"):
-    st.success(f"GGドル交換は  {gg_tran_coin:,} 円")
-    st.success(f"取引手数料（{int(TAN07 * 100):} %） {ta_tran:,} 円")
-    st.success(f"GGドル {gg_doll:,.2f} ")
+    st.info(f"GGドル交換は  {gg_tran_coin:,} 円")
+    st.info(f"取引手数料（{int(TAN07 * 100):} %） {ta_tran:,} 円")
+    st.info(f"GGドル {gg_doll:,.2f}  0.5単位切り捨て")
     # st.success(f"1ドルのレート（円） {exchange_rate:,} ")
 
 # if st.button("還元率を計算"):
