@@ -1,4 +1,4 @@
-# poker_chip_counter
+# poker_coin_counter
 
 ## Overview
 
@@ -18,12 +18,12 @@ It is built using Streamlit and Python.
 
 1. **Clone the repository:**
 	```
-    git clone poker_prize_counter.git
+    git clone poker_coin_counter.git
 	```
 
 2. **Navigate to the project directory:**
 	```
-    cd poker_prize_counter
+    cd poker_coin_counter
 	```
 
 3. **Install the required packages:**
@@ -41,7 +41,7 @@ It is built using Streamlit and Python.
 ## Folder Structure
 
 ```
-poker-tournament-profit-tracker/
+poker-coin-counter/
 │
 ├── app.py                      # Main Streamlit application file
 ├── requirements.txt            # Project dependencies
