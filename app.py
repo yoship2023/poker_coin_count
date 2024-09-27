@@ -30,7 +30,7 @@ TAN07 = 0.07
 TAN93 = 1 - TAN07
 TAN13 = 1.3
 # ドル円レート
-RATE = 145.5
+RATE = 143.00
 
 # 入力フォーム
 exchange_rate = st.number_input("1ドルのレート（円）", min_value=0.01, value=RATE)
