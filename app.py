@@ -30,7 +30,7 @@ TAN07 = 0.07
 TAN93 = 1 - TAN07
 TAN13 = 1.3
 # ドル円レート
-RATE = 143.00
+RATE = 142.16
 
 # 入力フォーム
 exchange_rate = st.number_input("1ドルのレート（円）", min_value=0.01, value=RATE)
@@ -41,7 +41,7 @@ gg_tran_coin = int(arrival_coin * TAN93)
 ta_tran = int(arrival_coin * TAN07)
 # GGドル
 gg_doll = gg_tran_coin / exchange_rate
-# result_gg_doll = 
+# result_gg_doll =
 
 if st.button("計算"):
     st.info(f"GGドル交換は  {gg_tran_coin:,} 円")
